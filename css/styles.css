@@ -1,191 +1,223 @@
 :root {
-    /*Primary colors*/
-    --soft-red:hsl(7, 99%, 70%);
-    --yellow: hsl(51, 100%, 49%);
-    --dark-desaturated-cyan: hsl(167, 40%, 24%);
-    --dark-blue: hsl(198, 62%, 26%);
-    --dark-moderate-cyan: hsl(168, 34%, 41%);
+  /*Primary colors*/
+  --soft-red: hsl(7, 99%, 70%);
+  --yellow: hsl(51, 100%, 49%);
+  --dark-desaturated-cyan: hsl(167, 40%, 24%);
+  --dark-blue: hsl(198, 62%, 26%);
+  --dark-moderate-cyan: hsl(168, 34%, 41%);
 
-    /*Neutral colors*/
-    --very-dark-desaturated-blue: hsl(212, 27%, 19%);
-    --very-dark-grayish-blue: hsl(213, 9%, 39%);
-    --dark-grayish-blue: hsl(232, 10%, 55%);
-    --grayish-blue: hsl(210, 4%, 67%);
-    --white: hsl(0, 0%, 100%);
+  /*Neutral colors*/
+  --very-dark-desaturated-blue: hsl(212, 27%, 19%);
+  --very-dark-grayish-blue: hsl(213, 9%, 39%);
+  --dark-grayish-blue: hsl(232, 10%, 55%);
+  --grayish-blue: hsl(210, 4%, 67%);
+  --white: hsl(0, 0%, 100%);
 
-    /*Fonts*/
-    --font1: 'Fraunces', serif;
-    --font2: 'Barlow', sans-serif;
+  /*Fonts*/
+  --font1: "Fraunces", serif;
+  --font2: "Barlow", sans-serif;
 }
 
 * {
-    margin: 0;
-    box-sizing: border-box;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: var(--font2);
+  font-family: var(--font2);
 }
 
 .container {
-    padding: 80px 0;
-    width: 90%;
-    margin: 0 auto;
+  padding: 80px 0;
+  width: 90%;
+  margin: 0 auto;
 }
 
 .hero {
-    background-image: url('../images/mobile/image-header.jpg');
-    background-size: cover;
-    background-position: center;
+  background-image: url("../images/mobile/image-header.jpg");
+  background-size: cover;
+  background-position: center;
 }
 
 .nav {
-    padding: 30px 0;
-    display: grid;
-    align-items: center;
-    grid-template-columns: repeat(2,max-content);
-    justify-content: space-between;
+  padding: 30px 0;
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(2, max-content);
+  justify-content: space-between;
 }
 
 .hero_main {
-    height: 450px;
-    color: var(--white);
-    text-align: center;
+  height: 450px;
+  color: var(--white);
+  text-align: center;
 }
 
 .hero_title {
-    font-size: 2.5rem;
-    font-family: var(--font1);
-    text-transform: uppercase;
-    letter-spacing: 5px;
-    margin-bottom: 1rem;
+  font-size: 2.5rem;
+  font-family: var(--font1);
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  margin-bottom: 1rem;
 }
 
 /*Services*/
 .services {
-    width: 100%;
-    display: grid;
-    grid-template-rows: repeat(2, 250px 400px);
+  width: 100%;
+  display: grid;
+  grid-template-rows: repeat(2, 250px 400px);
 }
 
 .services_image {
-    background-image: url('../images/mobile/image-transform.jpg');
-    background-size: cover;
-    background-position: center;
+  background-image: url("../images/mobile/image-transform.jpg");
+  background-size: cover;
+  background-position: center;
 }
 
 .services_texts {
-    padding: 1rem 1.5rem;
-    place-self: center;
-    text-align: center;
-    --color: hsla(51, 100%, 49%,0.30);
+  padding: 1rem 1.5rem;
+  place-self: center;
+  text-align: center;
+  --color: hsla(51, 100%, 49%, 0.3);
 }
 
 .services_title {
-    font-size: 2rem;
-    font-family: var(--font1);
-    color: var(--very-dark-desaturated-blue);
+  font-size: 2rem;
+  font-family: var(--font1);
+  color: var(--very-dark-desaturated-blue);
 }
 
 .services_paragraph {
-    line-height: 1.5;
-    color: var(--very-dark-grayish-blue);
-    margin: 1.5rem;
+  line-height: 1.5;
+  color: var(--very-dark-grayish-blue);
+  margin: 1.5rem;
 }
 
 .services_cta {
-    color: var(--very-dark-desaturated-blue);
-    text-decoration: none;
-    text-transform: uppercase;
-    font-family: var(--font1);
-    position: relative;
+  color: var(--very-dark-desaturated-blue);
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: var(--font1);
+  position: relative;
 }
 
 .services_cta::before {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 30%;
-    border-radius: 2rem;
-    z-index: -1;
-    background-color: var(--color);
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 30%;
+  border-radius: 2rem;
+  z-index: -1;
+  background-color: var(--color);
 }
 
 .services_image--2 {
-    background-image: url('../images/mobile/image-stand-out.jpg');
+  background-image: url("../images/mobile/image-stand-out.jpg");
 }
 
 .services_texts--2 {
-    --color: hsla(7, 99%, 70%,0.30);
+  --color: hsla(7, 99%, 70%, 0.3);
 }
 
 /*Jobs*/
 
 .jobs {
-    display: grid;
-    grid-auto-rows: 500px;
+  display: grid;
+  grid-auto-rows: 500px;
 }
 
 .jobs_section {
-    background-image: url('../images/mobile/image-graphic-design.jpg');
-    background-position: center;
-    background-size: cover;
-    padding: 2.5rem 1.5rem;
-    display: grid;
-    align-content: end;
-    text-align: center;
-    color: var(--dark-desaturated-cyan);
+  background-image: url("../images/mobile/image-graphic-design.jpg");
+  background-position: center;
+  background-size: cover;
+  padding: 2.5rem 1.5rem;
+  display: grid;
+  align-content: end;
+  text-align: center;
+  color: var(--dark-desaturated-cyan);
 }
 
 .jobs_section--2 {
-    background-image: url('../images/mobile/image-photography.jpg');
-    color: var(--dark-blue);
+  background-image: url("../images/mobile/image-photography.jpg");
+  color: var(--dark-blue);
 }
 
 .jobs_name {
-    font-family: var(--font1);
-    font-size: 1.7rem;
+  font-family: var(--font1);
+  font-size: 1.7rem;
 }
 
 .jobs_paragraph {
-    line-height: 1.5;
-    margin-top: 1rem;
+  line-height: 1.5;
+  margin-top: 1rem;
 }
 
 /*Testimonials*/
 
 .testimonials {
-    text-align: center;
+  text-align: center;
 }
 
 .testimonials_title {
-    font-size: 1.4rem;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    color: var(--dark-grayish-blue);
-    font-family: var(--font1);
+  font-size: 1.4rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--dark-grayish-blue);
+  font-family: var(--font1);
 }
 
 .testimonials_container {
-    padding: 60px 0;
+  padding: 60px 0;
+  display: grid;
+  gap: 6rem;
 }
 
 .testimonials_img {
-    width: 110px;
-    height: 110px;
-    object-fit: cover;
-    border-radius: 50%;
+  width: 110px;
+  height: 110px;
+  object-fit: cover;
+  border-radius: 50%;
 }
 
 .testimonials_paragraph {
-    color: var(--dark-blue);
-    line-height: 1.5;
-    margin: 1.5rem;
+  color: var(--dark-blue);
+  line-height: 1.5;
+  margin: 1.5rem;
 }
 
 .testimonials_name {
-    color: var(--very-dark-desaturated-blue);
-    font-family: var(--font1);
-    margin-bottom: .7rem;
+  color: var(--very-dark-desaturated-blue);
+  font-family: var(--font1);
+  margin-bottom: 0.7rem;
+}
+
+.testimonials_job {
+  color: var(--grayish-blue);
+}
+
+/*Gallery*/
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.gallery_image {
+  width: 100%;
+  aspect-ratio: 1/1;
+  background-image: url("../images/mobile/image-gallery-milkbottles.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.gallery_image:nth-last-of-type(2) {
+    background-image: url('../images/mobile/image-gallery-orange.jpg');
+}
+
+.gallery_image:nth-last-of-type(3) {
+    background-image: url('../images/mobile/image-gallery-cone.jpg');
+}
+
+.gallery_image:nth-last-of-type(4) {
+    background-image: url('../images/mobile/image-gallery-sugar-cubes.jpg');
 }
