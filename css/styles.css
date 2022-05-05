@@ -47,6 +47,10 @@ body {
   justify-content: space-between;
 }
 
+.nav_links {
+  display: none;
+}
+
 .hero_main {
   height: 450px;
   color: var(--white);
@@ -211,13 +215,78 @@ body {
 }
 
 .gallery_image:nth-last-of-type(2) {
-    background-image: url('../images/mobile/image-gallery-orange.jpg');
+  background-image: url("../images/mobile/image-gallery-orange.jpg");
 }
 
 .gallery_image:nth-last-of-type(3) {
-    background-image: url('../images/mobile/image-gallery-cone.jpg');
+  background-image: url("../images/mobile/image-gallery-cone.jpg");
 }
 
 .gallery_image:nth-last-of-type(4) {
-    background-image: url('../images/mobile/image-gallery-sugar-cubes.jpg');
+  background-image: url("../images/mobile/image-gallery-sugar-cubes.jpg");
+}
+
+/*Footer*/
+.footer {
+  background-color: #90d4c5;
+  text-align: center;
+}
+
+.footer_logo {
+  width: 200px;
+}
+
+.footer_nav {
+  width: 90%;
+  max-width: 400px;
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer_link {
+  color: var(--dark-moderate-cyan);
+  text-decoration: none;
+  padding: 1.5rem 0 3rem;
+}
+
+.footer_social {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: max-content;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+/*When min-width is 768px*/
+@media (min-width: 768px) {
+  .hero {
+    background-image: url('../images/desktop/image-header.jpg');
+  }
+
+  .nav_hamburguer {
+    display: none;
+  }
+
+  .nav_links {
+    display: grid;
+    grid-auto-flow: column;
+    gap: 1.2rem;
+    align-items: center;
+  }
+
+  .nav_link {
+    text-decoration: none;
+    color: var(--white);
+  }
+
+  .nav_link--cta {
+    color: var(--dark-blue);
+    background-color: var(--white);
+    padding: .7em 1.5em;
+    border-radius: 2em;
+    font-family: var(--font1);
+  }
 }
