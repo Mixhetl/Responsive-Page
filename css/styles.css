@@ -31,6 +31,7 @@ body {
   padding: 80px 0;
   width: 90%;
   margin: 0 auto;
+  max-width: 1200px;
 }
 
 .hero {
@@ -288,5 +289,34 @@ body {
     padding: .7em 1.5em;
     border-radius: 2em;
     font-family: var(--font1);
+  }
+
+  /*Services*/
+  .services {
+    grid-template-rows: repeat(2,500px);
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: 
+    "text1 img1"
+    "img2 text2";
+  }
+  
+  .services_image {
+    background-image: url("../images/desktop/image-transform.jpg");
+    grid-area: img1;
+  }
+  
+  .services_texts {
+    text-align: start;
+    grid-area: text1;
+    padding: 2rem 3rem;
+  }
+  
+  .services_texts--2 {
+    grid-area: text2;
+  }
+  
+  .services_image--2 {
+    background-image: url("../images/desktop/image-stand-out.jpg");
+    grid-area: img2;
   }
 }
